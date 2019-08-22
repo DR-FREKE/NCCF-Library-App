@@ -1,0 +1,11 @@
+.input-label {
+  background:#344258;
+  color:#fff;
+  padding: 12px;
+}
+#file {
+  display:none;
+}
+.input-label:hover {
+
+}

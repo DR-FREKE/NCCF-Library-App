@@ -1,0 +1,278 @@
+body {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.emp-profile {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 70%;
+    height: 100%;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile-head h5 {
+    color: #333;
+}
+
+.profile-head h6 {
+    color: #0062cc;
+}
+
+.profile-edit-btn {
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.proile-rating {
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+
+.proile-rating span {
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-head .nav-tabs {
+    margin-bottom: 5%;
+}
+
+.profile-head .nav-tabs .nav-link {
+    font-weight: 600;
+    border: none;
+}
+
+.profile-head .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #0062cc;
+}
+
+.profile-work {
+    padding: 14%;
+    margin-top: -15%;
+}
+
+.profile-work p {
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.profile-work a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-work ul {
+    list-style: none;
+}
+
+.profile-tab label {
+    font-weight: 600;
+}
+
+.profile-tab p {
+    font-weight: 600;
+    color: #0062cc;
+}
+
+.card-body {
+    padding: 1.5em .5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid>.box1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 3/11;
+}
+
+.box1>.left-box {
+    grid-column: 1/5;
+    padding: 1em 2em;
+    border-right: 1px solid #eee;
+}
+
+.box1>.right-box {
+    grid-column: 5/13;
+    padding: 1em 2em;
+    background: #fff;
+}
+
+.grid>div {
+    background: #fff;
+}
+
+.box1>div {
+    background: #eee;
+}
+
+.box1>div:nth-child(odd) {
+    background: #fff;
+}
+
+.mForm {
+    padding: .5em 0 .5em 0;
+}
+
+.cover {
+    border: 1px solid #ccc;
+    background: none;
+    /* border: 1px solid rgba(25, 25, 25, .3); */
+    display: flex;
+    align-self: center;
+    width: auto;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.cover>input[type="text"],
+.cover>input[type="email"],
+.cover>input[type="password"] {
+    width: 100%;
+    /* background: none; */
+    border: none;
+    padding: 7px 8px;
+    color: #255;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.updateBtn {
+    width: 30%;
+    background-color: #255;
+    border: 1px solid #225555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    padding: .5em;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: .5em 0;
+}
+
+ul>li {
+    width: 100%;
+    padding: .8em;
+    font-size: 1.3em;
+}
+
+li>a {
+    display: block;
+    color: #273746;
+    text-decoration: none;
+}
+
+li>a.active {
+    /* background: rgba(211, 211, 211, .2); */
+    color: #0062cc;
+}
+
+li>a:hover {
+    color: #0062cc;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+.closeBtn {}
+
+
+/* The Close Button */
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
